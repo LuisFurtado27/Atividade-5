@@ -1,0 +1,140 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo a fonte padrão */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc; /* Fundo claro */
+    color: #333; /* Texto escuro para boa legibilidade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0;
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 600px; /* Limitar a largura */
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4A5568; /* Cor do título */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilos para o input de nova tarefa */
+  input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Mudando a borda do input ao focar */
+  input[type="text"]:focus {
+    border-color: #3182ce;
+  }
+  
+  /* Botão de adicionar tarefa */
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3182ce; /* Azul */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Mudando a cor do botão ao passar o mouse */
+  button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Estilo da lista de tarefas */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  /* Item da lista de tarefas */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edf2f7; /* Fundo claro para as tarefas */
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4A5568;
+  }
+  
+  /* Estilo para tarefas concluídas */
+  li.completed {
+    text-decoration: line-through;
+    color: #a0aec0; /* Cor de texto mais suave para concluídas */
+  }
+  
+  /* Botões de ação (editar, excluir, concluir) */
+  button.action-button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Botão de editar */
+  button.edit {
+    background-color: #f6ad55; /* Cor de edição */
+    color: #fff;
+  }
+  
+  button.edit:hover {
+    background-color: #e65d31;
+  }
+  
+  /* Botão de excluir */
+  button.delete {
+    background-color: #e53e3e; /* Cor de exclusão */
+    color: #fff;
+  }
+  
+  button.delete:hover {
+    background-color: #c53030;
+  }
+  
+  /* Botão de concluir */
+  button.complete {
+    background-color: #38b2ac; /* Cor de concluir */
+    color: #fff;
+  }
+  
+  button.complete:hover {
+    background-color: #319795;
+  }
+  
